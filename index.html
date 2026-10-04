@@ -374,7 +374,7 @@ const PROJECTS=[
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-/
+
 $('#projGrid').innerHTML=PROJECTS.map(p=>`
  <article class="proj reveal" data-cat="${p.cat}">
   <button class="proj-img ${p.contain?'contain':''}" data-open="${p.id}" aria-label="Open ${esc(p.title)} details">
